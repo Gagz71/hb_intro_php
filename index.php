@@ -1,7 +1,5 @@
 <?php
 	include 'includes/header.php';
-	
-	
 	?>
 <div class="card-deck">
 	<?php
@@ -38,8 +36,19 @@
 </div>
 
 <div class="row justify-content-center">
-	<a class="btn btn-outline-info mt-5 " href="includes/list.php" role="button" title="Voir toutes les séries"> 👀 </a>
+	<a class="btn btn-outline-info mt-5 " href="list.php" role="button" title="Voir toutes les séries"> 👀 </a>
 </div>
+
+<?php if(isset($_SESSION['email'])){?>
+
+    <a href="logout.php" class="btn btn-outline-dark mt-5" title="Me déconnecter"><i class="fas fa-sign-out-alt"></i></a>
+	<?php
+}else{
+	?>
+    <a class="btn btn-outline-dark mt-5 " href="login.php" title="Me connecter">r<i class="fas fa-sign-in-alt"></i></a>
+	<?php
+}
+?>
 
 
 

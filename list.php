@@ -1,3 +1,10 @@
+<?php
+     
+     include 'includes/header.php';
+     include 'includes/footer.php';
+     //include 'includes/navbar.php';
+
+?>
 
 <section>
 	<?php
@@ -125,10 +132,7 @@
 		foreach ($arrayBonnets as $key => $value){
 			displayData2($key, $value);
 		}
-	
-	
-	
-	
+  
 	?>
 </section>
 
